@@ -406,7 +406,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kb.realTimeGraph;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_INCLUDE_PATHS = /Users/keshavbansal/Desktop/Development/realTimeGraph;
+				SWIFT_INCLUDE_PATHS = $PROJECT_DIR/;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -420,7 +420,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kb.realTimeGraph;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_INCLUDE_PATHS = /Users/keshavbansal/Desktop/Development/realTimeGraph;
+				SWIFT_INCLUDE_PATHS = $PROJECT_DIR/;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
