@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E19B21241F22445A008FD74F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B21231F22445A008FD74F /* AppDelegate.swift */; };
+		E19B21261F22445A008FD74F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B21251F22445A008FD74F /* ViewController.swift */; };
+		E19B21291F22445A008FD74F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E19B21271F22445A008FD74F /* Main.storyboard */; };
+		E19B212C1F22445A008FD74F /* realTimeGraph.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E19B212A1F22445A008FD74F /* realTimeGraph.xcdatamodeld */; };
+		E19B212E1F22445A008FD74F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E19B212D1F22445A008FD74F /* Assets.xcassets */; };
+		E19B21311F22445A008FD74F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E19B212F1F22445A008FD74F /* LaunchScreen.storyboard */; };
+		E19B21531F224560008FD74F /* SocketAckEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B213A1F22455F008FD74F /* SocketAckEmitter.swift */; };
+		E19B21541F224560008FD74F /* SocketAckManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B213B1F22455F008FD74F /* SocketAckManager.swift */; };
+		E19B21551F224560008FD74F /* SocketAnyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B213C1F224560008FD74F /* SocketAnyEvent.swift */; };
+		E19B21561F224560008FD74F /* SocketClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B213D1F224560008FD74F /* SocketClientManager.swift */; };
+		E19B21571F224560008FD74F /* SocketEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B213E1F224560008FD74F /* SocketEngine.swift */; };
+		E19B21581F224560008FD74F /* SocketEngineClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B213F1F224560008FD74F /* SocketEngineClient.swift */; };
+		E19B21591F224560008FD74F /* SocketEnginePacketType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B21401F224560008FD74F /* SocketEnginePacketType.swift */; };
+		E19B215A1F224560008FD74F /* SocketEnginePollable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B21411F224560008FD74F /* SocketEnginePollable.swift */; };
+		E19B215B1F224560008FD74F /* SocketEngineSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B21421F224560008FD74F /* SocketEngineSpec.swift */; };
+		E19B215C1F224560008FD74F /* SocketEngineWebsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B21431F224560008FD74F /* SocketEngineWebsocket.swift */; };
+		E19B215D1F224560008FD74F /* SocketEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B21441F224560008FD74F /* SocketEventHandler.swift */; };
+		E19B215E1F224560008FD74F /* SocketExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B21451F224560008FD74F /* SocketExtensions.swift */; };
+		E19B215F1F224560008FD74F /* SocketIOClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B21461F224560008FD74F /* SocketIOClient.swift */; };
+		E19B21601F224560008FD74F /* SocketIOClientConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B21471F224560008FD74F /* SocketIOClientConfiguration.swift */; };
+		E19B21611F224560008FD74F /* SocketIOClientOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B21481F224560008FD74F /* SocketIOClientOption.swift */; };
+		E19B21621F224560008FD74F /* SocketIOClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B21491F224560008FD74F /* SocketIOClientSpec.swift */; };
+		E19B21631F224560008FD74F /* SocketIOClientStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B214A1F224560008FD74F /* SocketIOClientStatus.swift */; };
+		E19B21641F224560008FD74F /* SocketLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B214B1F224560008FD74F /* SocketLogger.swift */; };
+		E19B21651F224560008FD74F /* SocketPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B214C1F224560008FD74F /* SocketPacket.swift */; };
+		E19B21661F224560008FD74F /* SocketParsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B214D1F224560008FD74F /* SocketParsable.swift */; };
+		E19B21671F224560008FD74F /* SocketStringReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B214E1F224560008FD74F /* SocketStringReader.swift */; };
+		E19B21681F224560008FD74F /* SocketTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B214F1F224560008FD74F /* SocketTypes.swift */; };
+		E19B21691F224560008FD74F /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B21501F224560008FD74F /* SSLSecurity.swift */; };
+		E19B216A1F224560008FD74F /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B21511F224560008FD74F /* WebSocket.swift */; };
+		E19B216C1F224595008FD74F /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B216B1F224595008FD74F /* SocketIOManager.swift */; };
+		E19B21701F22508E008FD74F /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B216F1F22508E008FD74F /* Compression.swift */; };
+		E19B21721F2251FC008FD74F /* zlib in Resources */ = {isa = PBXBuildFile; fileRef = E19B21711F2251FC008FD74F /* zlib */; };
+		E19B21771F233527008FD74F /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B21741F233527008FD74F /* Chart.swift */; };
+		E19B21781F233527008FD74F /* ChartColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B21751F233527008FD74F /* ChartColors.swift */; };
+		E19B21791F233527008FD74F /* ChartSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B21761F233527008FD74F /* ChartSeries.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E19B21201F224459008FD74F /* realTimeGraph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = realTimeGraph.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E19B21231F22445A008FD74F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E19B21251F22445A008FD74F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E19B21281F22445A008FD74F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E19B212B1F22445A008FD74F /* realTimeGraph.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = realTimeGraph.xcdatamodel; sourceTree = "<group>"; };
+		E19B212D1F22445A008FD74F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E19B21301F22445A008FD74F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E19B21321F22445A008FD74F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E19B213A1F22455F008FD74F /* SocketAckEmitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketAckEmitter.swift; path = realTimeGraph/SocketIO/SocketAckEmitter.swift; sourceTree = "<group>"; };
+		E19B213B1F22455F008FD74F /* SocketAckManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketAckManager.swift; path = realTimeGraph/SocketIO/SocketAckManager.swift; sourceTree = "<group>"; };
+		E19B213C1F224560008FD74F /* SocketAnyEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketAnyEvent.swift; path = realTimeGraph/SocketIO/SocketAnyEvent.swift; sourceTree = "<group>"; };
+		E19B213D1F224560008FD74F /* SocketClientManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketClientManager.swift; path = realTimeGraph/SocketIO/SocketClientManager.swift; sourceTree = "<group>"; };
+		E19B213E1F224560008FD74F /* SocketEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketEngine.swift; path = realTimeGraph/SocketIO/SocketEngine.swift; sourceTree = "<group>"; };
+		E19B213F1F224560008FD74F /* SocketEngineClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketEngineClient.swift; path = realTimeGraph/SocketIO/SocketEngineClient.swift; sourceTree = "<group>"; };
+		E19B21401F224560008FD74F /* SocketEnginePacketType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketEnginePacketType.swift; path = realTimeGraph/SocketIO/SocketEnginePacketType.swift; sourceTree = "<group>"; };
+		E19B21411F224560008FD74F /* SocketEnginePollable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketEnginePollable.swift; path = realTimeGraph/SocketIO/SocketEnginePollable.swift; sourceTree = "<group>"; };
+		E19B21421F224560008FD74F /* SocketEngineSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketEngineSpec.swift; path = realTimeGraph/SocketIO/SocketEngineSpec.swift; sourceTree = "<group>"; };
+		E19B21431F224560008FD74F /* SocketEngineWebsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketEngineWebsocket.swift; path = realTimeGraph/SocketIO/SocketEngineWebsocket.swift; sourceTree = "<group>"; };
+		E19B21441F224560008FD74F /* SocketEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketEventHandler.swift; path = realTimeGraph/SocketIO/SocketEventHandler.swift; sourceTree = "<group>"; };
+		E19B21451F224560008FD74F /* SocketExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketExtensions.swift; path = realTimeGraph/SocketIO/SocketExtensions.swift; sourceTree = "<group>"; };
+		E19B21461F224560008FD74F /* SocketIOClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketIOClient.swift; path = realTimeGraph/SocketIO/SocketIOClient.swift; sourceTree = "<group>"; };
+		E19B21471F224560008FD74F /* SocketIOClientConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketIOClientConfiguration.swift; path = realTimeGraph/SocketIO/SocketIOClientConfiguration.swift; sourceTree = "<group>"; };
+		E19B21481F224560008FD74F /* SocketIOClientOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketIOClientOption.swift; path = realTimeGraph/SocketIO/SocketIOClientOption.swift; sourceTree = "<group>"; };
+		E19B21491F224560008FD74F /* SocketIOClientSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketIOClientSpec.swift; path = realTimeGraph/SocketIO/SocketIOClientSpec.swift; sourceTree = "<group>"; };
+		E19B214A1F224560008FD74F /* SocketIOClientStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketIOClientStatus.swift; path = realTimeGraph/SocketIO/SocketIOClientStatus.swift; sourceTree = "<group>"; };
+		E19B214B1F224560008FD74F /* SocketLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketLogger.swift; path = realTimeGraph/SocketIO/SocketLogger.swift; sourceTree = "<group>"; };
+		E19B214C1F224560008FD74F /* SocketPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketPacket.swift; path = realTimeGraph/SocketIO/SocketPacket.swift; sourceTree = "<group>"; };
+		E19B214D1F224560008FD74F /* SocketParsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketParsable.swift; path = realTimeGraph/SocketIO/SocketParsable.swift; sourceTree = "<group>"; };
+		E19B214E1F224560008FD74F /* SocketStringReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketStringReader.swift; path = realTimeGraph/SocketIO/SocketStringReader.swift; sourceTree = "<group>"; };
+		E19B214F1F224560008FD74F /* SocketTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketTypes.swift; path = realTimeGraph/SocketIO/SocketTypes.swift; sourceTree = "<group>"; };
+		E19B21501F224560008FD74F /* SSLSecurity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SSLSecurity.swift; path = realTimeGraph/SocketIO/SSLSecurity.swift; sourceTree = "<group>"; };
+		E19B21511F224560008FD74F /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = realTimeGraph/SocketIO/WebSocket.swift; sourceTree = "<group>"; };
+		E19B216B1F224595008FD74F /* SocketIOManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
+		E19B216F1F22508E008FD74F /* Compression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Compression.swift; path = realTimeGraph/SocketIO/Compression.swift; sourceTree = "<group>"; };
+		E19B21711F2251FC008FD74F /* zlib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = zlib; sourceTree = "<group>"; };
+		E19B21741F233527008FD74F /* Chart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Chart.swift; path = realTimeGraph/Chart/Chart.swift; sourceTree = "<group>"; };
+		E19B21751F233527008FD74F /* ChartColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChartColors.swift; path = realTimeGraph/Chart/ChartColors.swift; sourceTree = "<group>"; };
+		E19B21761F233527008FD74F /* ChartSeries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChartSeries.swift; path = realTimeGraph/Chart/ChartSeries.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E19B211D1F224459008FD74F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E19B21171F224459008FD74F = {
+			isa = PBXGroup;
+			children = (
+				E19B21731F23351B008FD74F /* SwiftChart */,
+				E19B21381F224552008FD74F /* SocketIO */,
+				E19B21221F224459008FD74F /* realTimeGraph */,
+				E19B21211F224459008FD74F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E19B21211F224459008FD74F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E19B21201F224459008FD74F /* realTimeGraph.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E19B21221F224459008FD74F /* realTimeGraph */ = {
+			isa = PBXGroup;
+			children = (
+				E19B21231F22445A008FD74F /* AppDelegate.swift */,
+				E19B21251F22445A008FD74F /* ViewController.swift */,
+				E19B216B1F224595008FD74F /* SocketIOManager.swift */,
+				E19B21271F22445A008FD74F /* Main.storyboard */,
+				E19B212D1F22445A008FD74F /* Assets.xcassets */,
+				E19B212F1F22445A008FD74F /* LaunchScreen.storyboard */,
+				E19B21321F22445A008FD74F /* Info.plist */,
+				E19B212A1F22445A008FD74F /* realTimeGraph.xcdatamodeld */,
+			);
+			path = realTimeGraph;
+			sourceTree = "<group>";
+		};
+		E19B21381F224552008FD74F /* SocketIO */ = {
+			isa = PBXGroup;
+			children = (
+				E19B21711F2251FC008FD74F /* zlib */,
+				E19B216F1F22508E008FD74F /* Compression.swift */,
+				E19B213A1F22455F008FD74F /* SocketAckEmitter.swift */,
+				E19B213B1F22455F008FD74F /* SocketAckManager.swift */,
+				E19B213C1F224560008FD74F /* SocketAnyEvent.swift */,
+				E19B213D1F224560008FD74F /* SocketClientManager.swift */,
+				E19B213E1F224560008FD74F /* SocketEngine.swift */,
+				E19B213F1F224560008FD74F /* SocketEngineClient.swift */,
+				E19B21401F224560008FD74F /* SocketEnginePacketType.swift */,
+				E19B21411F224560008FD74F /* SocketEnginePollable.swift */,
+				E19B21421F224560008FD74F /* SocketEngineSpec.swift */,
+				E19B21431F224560008FD74F /* SocketEngineWebsocket.swift */,
+				E19B21441F224560008FD74F /* SocketEventHandler.swift */,
+				E19B21451F224560008FD74F /* SocketExtensions.swift */,
+				E19B21461F224560008FD74F /* SocketIOClient.swift */,
+				E19B21471F224560008FD74F /* SocketIOClientConfiguration.swift */,
+				E19B21481F224560008FD74F /* SocketIOClientOption.swift */,
+				E19B21491F224560008FD74F /* SocketIOClientSpec.swift */,
+				E19B214A1F224560008FD74F /* SocketIOClientStatus.swift */,
+				E19B214B1F224560008FD74F /* SocketLogger.swift */,
+				E19B214C1F224560008FD74F /* SocketPacket.swift */,
+				E19B214D1F224560008FD74F /* SocketParsable.swift */,
+				E19B214E1F224560008FD74F /* SocketStringReader.swift */,
+				E19B214F1F224560008FD74F /* SocketTypes.swift */,
+				E19B21501F224560008FD74F /* SSLSecurity.swift */,
+				E19B21511F224560008FD74F /* WebSocket.swift */,
+			);
+			name = SocketIO;
+			sourceTree = "<group>";
+		};
+		E19B21731F23351B008FD74F /* SwiftChart */ = {
+			isa = PBXGroup;
+			children = (
+				E19B21741F233527008FD74F /* Chart.swift */,
+				E19B21751F233527008FD74F /* ChartColors.swift */,
+				E19B21761F233527008FD74F /* ChartSeries.swift */,
+			);
+			name = SwiftChart;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E19B211F1F224459008FD74F /* realTimeGraph */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E19B21351F22445A008FD74F /* Build configuration list for PBXNativeTarget "realTimeGraph" */;
+			buildPhases = (
+				E19B211C1F224459008FD74F /* Sources */,
+				E19B211D1F224459008FD74F /* Frameworks */,
+				E19B211E1F224459008FD74F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = realTimeGraph;
+			productName = realTimeGraph;
+			productReference = E19B21201F224459008FD74F /* realTimeGraph.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E19B21181F224459008FD74F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Keshav;
+				TargetAttributes = {
+					E19B211F1F224459008FD74F = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 293K6F3WH6;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E19B211B1F224459008FD74F /* Build configuration list for PBXProject "realTimeGraph" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E19B21171F224459008FD74F;
+			productRefGroup = E19B21211F224459008FD74F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E19B211F1F224459008FD74F /* realTimeGraph */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E19B211E1F224459008FD74F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E19B21311F22445A008FD74F /* LaunchScreen.storyboard in Resources */,
+				E19B21721F2251FC008FD74F /* zlib in Resources */,
+				E19B212E1F22445A008FD74F /* Assets.xcassets in Resources */,
+				E19B21291F22445A008FD74F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E19B211C1F224459008FD74F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E19B21591F224560008FD74F /* SocketEnginePacketType.swift in Sources */,
+				E19B21541F224560008FD74F /* SocketAckManager.swift in Sources */,
+				E19B21661F224560008FD74F /* SocketParsable.swift in Sources */,
+				E19B21601F224560008FD74F /* SocketIOClientConfiguration.swift in Sources */,
+				E19B215C1F224560008FD74F /* SocketEngineWebsocket.swift in Sources */,
+				E19B215B1F224560008FD74F /* SocketEngineSpec.swift in Sources */,
+				E19B21781F233527008FD74F /* ChartColors.swift in Sources */,
+				E19B21701F22508E008FD74F /* Compression.swift in Sources */,
+				E19B212C1F22445A008FD74F /* realTimeGraph.xcdatamodeld in Sources */,
+				E19B21791F233527008FD74F /* ChartSeries.swift in Sources */,
+				E19B21531F224560008FD74F /* SocketAckEmitter.swift in Sources */,
+				E19B21581F224560008FD74F /* SocketEngineClient.swift in Sources */,
+				E19B21551F224560008FD74F /* SocketAnyEvent.swift in Sources */,
+				E19B21261F22445A008FD74F /* ViewController.swift in Sources */,
+				E19B21621F224560008FD74F /* SocketIOClientSpec.swift in Sources */,
+				E19B215F1F224560008FD74F /* SocketIOClient.swift in Sources */,
+				E19B216A1F224560008FD74F /* WebSocket.swift in Sources */,
+				E19B215A1F224560008FD74F /* SocketEnginePollable.swift in Sources */,
+				E19B21651F224560008FD74F /* SocketPacket.swift in Sources */,
+				E19B215E1F224560008FD74F /* SocketExtensions.swift in Sources */,
+				E19B21611F224560008FD74F /* SocketIOClientOption.swift in Sources */,
+				E19B216C1F224595008FD74F /* SocketIOManager.swift in Sources */,
+				E19B21771F233527008FD74F /* Chart.swift in Sources */,
+				E19B21631F224560008FD74F /* SocketIOClientStatus.swift in Sources */,
+				E19B21571F224560008FD74F /* SocketEngine.swift in Sources */,
+				E19B215D1F224560008FD74F /* SocketEventHandler.swift in Sources */,
+				E19B21671F224560008FD74F /* SocketStringReader.swift in Sources */,
+				E19B21691F224560008FD74F /* SSLSecurity.swift in Sources */,
+				E19B21681F224560008FD74F /* SocketTypes.swift in Sources */,
+				E19B21241F22445A008FD74F /* AppDelegate.swift in Sources */,
+				E19B21641F224560008FD74F /* SocketLogger.swift in Sources */,
+				E19B21561F224560008FD74F /* SocketClientManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E19B21271F22445A008FD74F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E19B21281F22445A008FD74F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E19B212F1F22445A008FD74F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E19B21301F22445A008FD74F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E19B21331F22445A008FD74F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E19B21341F22445A008FD74F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E19B21361F22445A008FD74F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 293K6F3WH6;
+				INFOPLIST_FILE = realTimeGraph/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kb.realTimeGraph;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = /Users/keshavbansal/Desktop/Development/realTimeGraph;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E19B21371F22445A008FD74F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 293K6F3WH6;
+				INFOPLIST_FILE = realTimeGraph/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kb.realTimeGraph;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = /Users/keshavbansal/Desktop/Development/realTimeGraph;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E19B211B1F224459008FD74F /* Build configuration list for PBXProject "realTimeGraph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E19B21331F22445A008FD74F /* Debug */,
+				E19B21341F22445A008FD74F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E19B21351F22445A008FD74F /* Build configuration list for PBXNativeTarget "realTimeGraph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E19B21361F22445A008FD74F /* Debug */,
+				E19B21371F22445A008FD74F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E19B212A1F22445A008FD74F /* realTimeGraph.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E19B212B1F22445A008FD74F /* realTimeGraph.xcdatamodel */,
+			);
+			currentVersion = E19B212B1F22445A008FD74F /* realTimeGraph.xcdatamodel */;
+			path = realTimeGraph.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E19B21181F224459008FD74F /* Project object */;
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="PIp-Ao-Muo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Real-Time Graph" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ks4-uq-nw2">
+                                <rect key="frame" x="29" y="308" width="317" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="cWc-6T-BLM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="32"/>
+                                <color key="textColor" red="0.99597233529999996" green="1" blue="0.99056708810000005" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="PIp-Ao-Muo" secondAttribute="trailing" id="11s-IC-ytp"/>
+                            <constraint firstItem="PIp-Ao-Muo" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="NYX-A6-5oB"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="PIp-Ao-Muo" secondAttribute="bottom" id="a41-YR-q7d"/>
+                            <constraint firstItem="ks4-uq-nw2" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="f6i-eR-TA3"/>
+                            <constraint firstItem="ks4-uq-nw2" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="13" id="jVq-fv-Ymi"/>
+                            <constraint firstItem="PIp-Ao-Muo" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="nDU-rh-Upe"/>
+                            <constraint firstItem="ks4-uq-nw2" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="sNG-l2-fAU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ks4-uq-nw2" secondAttribute="trailing" constant="13" id="tqU-Bo-EHY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="736" height="1309"/>
+    </resources>
+</document>

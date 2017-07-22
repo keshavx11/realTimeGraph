@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="realTimeGraph" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Nne-0F-RVH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qAd-GK-YF4" customClass="Chart" customModule="realTimeGraph" customModuleProvider="target">
+                                <rect key="frame" x="16" y="121" width="343" height="382"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random Numbers Stored = 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0L-cq-sSl">
+                                <rect key="frame" x="38" y="550" width="299" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="2ox-Ms-gTx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99597233529999996" green="1" blue="0.99056708810000005" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Real-Time Graph" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQj-Kq-mfL">
+                                <rect key="frame" x="29" y="50" width="317" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="6lE-et-aQu"/>
+                                    <constraint firstAttribute="width" constant="317" id="zp6-DT-mJJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="32"/>
+                                <color key="textColor" red="0.99597233529999996" green="1" blue="0.99056708810000005" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IQj-Kq-mfL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="0uR-7P-mr9"/>
+                            <constraint firstItem="qAd-GK-YF4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="31c-3l-mt0"/>
+                            <constraint firstItem="qAd-GK-YF4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="101" id="5HV-OG-TJc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Nne-0F-RVH" secondAttribute="bottom" id="5ZN-bb-hlY"/>
+                            <constraint firstItem="M0L-cq-sSl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="22" id="AWZ-JO-nLO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qAd-GK-YF4" secondAttribute="bottom" constant="164" id="ViB-Yg-zI4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="M0L-cq-sSl" secondAttribute="trailing" constant="22" id="dNI-v0-bEM"/>
+                            <constraint firstItem="Nne-0F-RVH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oCx-vf-Ca3"/>
+                            <constraint firstAttribute="trailing" secondItem="Nne-0F-RVH" secondAttribute="trailing" id="oPE-Pc-VWT"/>
+                            <constraint firstItem="M0L-cq-sSl" firstAttribute="top" secondItem="qAd-GK-YF4" secondAttribute="bottom" constant="47" id="pFt-QS-tHB"/>
+                            <constraint firstItem="qAd-GK-YF4" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="sGl-5H-76D"/>
+                            <constraint firstItem="IQj-Kq-mfL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yOT-0r-XcT"/>
+                            <constraint firstItem="Nne-0F-RVH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ysD-Vd-omy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="chart" destination="qAd-GK-YF4" id="ovf-Ax-r4q"/>
+                        <outlet property="headingLabel" destination="IQj-Kq-mfL" id="FDP-Gh-IlY"/>
+                        <outlet property="label" destination="M0L-cq-sSl" id="zFS-nj-vDf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="68.815592203898049"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="736" height="1309"/>
+    </resources>
+</document>
